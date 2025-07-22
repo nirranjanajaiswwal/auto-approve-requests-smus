@@ -215,6 +215,7 @@ Create an EventBridge rule to capture subscription request events: <br>
 •	Detail Type: Subscription request creation events <br>
 •	Targets: Route events to both Lambda function and SNS topic <br>
 
+
 ![](/Images/smus8.png) <p>
 
 ![](/Images/smus9.png) <p>
