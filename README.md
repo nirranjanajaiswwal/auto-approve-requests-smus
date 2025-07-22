@@ -290,4 +290,6 @@ To implement this solution in your organization: <br>
 
 For additional resources and detailed implementation code, refer to the AWS documentation and best practices  guides for SageMaker Unified Studio and event-driven architectures. <br>
 
-
+## Authors
+Nira Jaiswal (Principal Solutions Architect, AWS) <br>
+Ajit Tandale (Sr Solutions Architect, AWS) <br>
