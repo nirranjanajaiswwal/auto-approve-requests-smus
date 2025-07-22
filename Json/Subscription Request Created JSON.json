@@ -1,0 +1,7 @@
+{
+  "source": ["aws.datazone"],
+  "detail-type": ["Subscription Request Created"],
+  "detail": {
+    "status": ["PENDING"]
+  }
+}

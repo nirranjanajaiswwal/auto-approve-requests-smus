@@ -1,0 +1,40 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"datazone:ListSubscriptionRequests",
+				"datazone:AcceptSubscriptionRequest",
+				"datazone:GetSubscriptionRequestDetails",
+				"datazone:GetDomain",
+				"datazone:ListProjects"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": "sts:AssumeRole",
+			"Resource": "arn:aws:iam::*:role/AmazonDataZone*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"sns:Publish"
+			],
+			"Resource": [
+				"arn:aws:sns:*:*:data-owner-topic",
+				"arn:aws:sns:*:*:subscriber-topic"
+			]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Resource": "arn:aws:logs:*:*:*"
+		}
+	]
+}
